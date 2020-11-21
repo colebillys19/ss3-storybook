@@ -1,0 +1,153 @@
+import React from 'react';
+import styled from 'styled-components';
+
+import Block from '@material-ui/icons/Block';
+import FileFolder from '@material-ui/icons/Folder';
+import Warning from '@material-ui/icons/WarningOutlined';
+
+import {
+  ArrowCircleDefaultMIcon,
+  ArrowCircleDefaultSIcon,
+  ArrowCircleHoverMIcon,
+  ArrowCircleHoverSIcon,
+  BackArrowCarbonMIcon,
+  BackArrowCarbonSIcon,
+  BackArrowPurpleMIcon,
+  BackArrowPurpleSIcon,
+  ChatbotDefaultIcon,
+  ChatbotHoverIcon,
+  CheckmarkIcon,
+  CloseXIcon,
+  DownloadActiveIcon,
+  DownloadDefaultIcon,
+  DownloadLIcon,
+  DropdownArrowIcon,
+  DropdownCalendarIcon,
+  DropdownCheckmarkIcon,
+  HamburgerMenuIcon,
+  HeaderAccountActiveIcon,
+  HeaderAccountDefaultIcon,
+  HeaderAccountHoverIcon,
+  HeaderBellActiveIcon,
+  HeaderBellDefaultIcon,
+  HeaderBellHoverIcon,
+  HeaderNewMsgDefaultIcon,
+  HeaderNewMsgHoverIcon,
+  MortgageLogo,
+  NavAccountActiveLIcon,
+  NavAccountActiveMIcon,
+  NavAccountDefaultLIcon,
+  NavAccountDefaultMIcon,
+  NavCalculatorActiveLIcon,
+  NavCalculatorActiveMIcon,
+  NavCalculatorDefaultLIcon,
+  NavCalculatorDefaultMIcon,
+  NavDocumentsActiveLIcon,
+  NavDocumentsActiveMIcon,
+  NavDocumentsDefaultLIcon,
+  NavDocumentsDefaultMIcon,
+  NavHelpActiveLIcon,
+  NavHelpActiveMIcon,
+  NavHelpDefaultLIcon,
+  NavHelpDefaultMIcon,
+  NavLogoutActiveLIcon,
+  NavLogoutActiveMIcon,
+  NavLogoutDefaultLIcon,
+  NavLogoutDefaultMIcon,
+  NavMortgageActiveLIcon,
+  NavMortgageActiveMIcon,
+  NavMortgageDefaultLIcon,
+  NavMortgageDefaultMIcon,
+  NavPaymentsActiveLIcon,
+  NavPaymentsActiveMIcon,
+  NavPaymentsDefaultLIcon,
+  NavPaymentsDefaultMIcon,
+  PlusIcon,
+  UncheckedIcon,
+} from './svg';
+import { iconStyle } from './defaultStyleHelper';
+
+const iconDictionary = (name, { ...options }) => {
+  const {
+    iconState,
+    style,
+    ...propsToPassDown
+  } = options;
+  const icons = {
+    active: {
+      account: HeaderAccountActiveIcon,
+      approved: CheckmarkIcon,
+      bell: HeaderBellActiveIcon,
+      downloadS: DownloadActiveIcon,
+      navAccountL: NavAccountActiveLIcon,
+      navAccountM: NavAccountActiveMIcon,
+      navCalculatorL: NavCalculatorActiveLIcon,
+      navCalculatorM: NavCalculatorActiveMIcon,
+      navDocumentsL: NavDocumentsActiveLIcon,
+      navDocumentsM: NavDocumentsActiveMIcon,
+      navHelpL: NavHelpActiveLIcon,
+      navHelpM: NavHelpActiveMIcon,
+      navLogoutL: NavLogoutActiveLIcon,
+      navLogoutM: NavLogoutActiveMIcon,
+      navMortgageL: NavMortgageActiveLIcon,
+      navMortgageM: NavMortgageActiveMIcon,
+      navPaymentsL: NavPaymentsActiveLIcon,
+      navPaymentsM: NavPaymentsActiveMIcon,
+    },
+    default: {
+      account: HeaderAccountDefaultIcon,
+      addCircle: PlusIcon,
+      arrowCircleM: ArrowCircleDefaultMIcon,
+      arrowCircleS: ArrowCircleDefaultSIcon,
+      arrowDown: DropdownArrowIcon,
+      arrowLeftM: BackArrowPurpleMIcon,
+      arrowLeftS: BackArrowPurpleSIcon,
+      arrowRightM: BackArrowCarbonMIcon,
+      arrowRightS: BackArrowCarbonSIcon,
+      bell: HeaderBellDefaultIcon,
+      block: Block,
+      calendar: DropdownCalendarIcon,
+      chatbot: ChatbotDefaultIcon,
+      checkMark: DropdownCheckmarkIcon,
+      close: CloseXIcon,
+      downloadL: DownloadLIcon,
+      downloadS: DownloadDefaultIcon,
+      fileFolder: FileFolder,
+      menu: HamburgerMenuIcon,
+      message: HeaderNewMsgDefaultIcon,
+      mortgageLogo: MortgageLogo,
+      navAccountL: NavAccountDefaultLIcon,
+      navAccountM: NavAccountDefaultMIcon,
+      navCalculatorL: NavCalculatorDefaultLIcon,
+      navCalculatorM: NavCalculatorDefaultMIcon,
+      navDocumentsL: NavDocumentsDefaultLIcon,
+      navDocumentsM: NavDocumentsDefaultMIcon,
+      navHelpL: NavHelpDefaultLIcon,
+      navHelpM: NavHelpDefaultMIcon,
+      navLogoutL: NavLogoutDefaultLIcon,
+      navLogoutM: NavLogoutDefaultMIcon,
+      navMortgageL: NavMortgageDefaultLIcon,
+      navMortgageM: NavMortgageDefaultMIcon,
+      navPaymentsL: NavPaymentsDefaultLIcon,
+      navPaymentsM: NavPaymentsDefaultMIcon,
+      unapproved: UncheckedIcon,
+      warning: Warning,
+    },
+    hover: {
+      account: HeaderAccountHoverIcon,
+      arrowCircleM: ArrowCircleHoverMIcon,
+      arrowCircleS: ArrowCircleHoverSIcon,
+      bell: HeaderBellHoverIcon,
+      chatbot: ChatbotHoverIcon,
+      message: HeaderNewMsgHoverIcon,
+    },
+  };
+
+  const status = iconState || 'default';
+  const styling = iconStyle[style] || {};
+  const IconToRender = icons[status][name];
+  const StyledIcon = styled(IconToRender)({ ...styling });
+  return <StyledIcon {...propsToPassDown} />;
+};
+
+export default iconDictionary;
