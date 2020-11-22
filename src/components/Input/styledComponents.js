@@ -12,10 +12,10 @@ import {
   primaryGrayBorder,
   primaryPurple,
   primaryPurpleBorder,
-} from 'defaultStyleHelper';
+} from '../../utils/defaultStyleHelper';
 
-import { P3, P4 } from '../Paragraph';
-import { SmH5 } from '../Headings';
+import { P3, P4 } from '../_base-ui/Paragraph';
+import { SmH5 } from '../_base-ui/Headings';
 
 /**
  * Styling applied to BaseTextInput

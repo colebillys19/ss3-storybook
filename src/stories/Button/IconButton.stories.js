@@ -6,14 +6,10 @@ import { IconButton } from '../../components/Buttons';
 export default {
   title: 'Components/Buttons/Icon',
   component: IconButton,
-  // argTypes: {},
+  argTypes: { onClick: { action: 'onClick' } },
 };
 
 const Template = (args) => <IconButton {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {
-  iconName: 'fileFolder',
-  label: 'yeet',
-  onClick: () => null,
-};
+Default.args = { iconName: 'fileFolder', label: 'button' };

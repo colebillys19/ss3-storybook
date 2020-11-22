@@ -6,13 +6,10 @@ import BaseButton from '../../components/Buttons/baseButton';
 export default {
   title: 'Components/Buttons/Base',
   component: BaseButton,
-  // argTypes: {},
+  argTypes: { onClick: { action: 'onClick' } },
 };
 
 const Template = (args) => <BaseButton {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {
-  label: 'yeet',
-  onClick: () => null,
-};
+Default.args = { label: 'button' };

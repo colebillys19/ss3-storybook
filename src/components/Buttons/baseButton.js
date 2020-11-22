@@ -25,7 +25,7 @@ const BaseButton = ({
   </Button>
 );
 
-BaseButton.defaultProps = { disabled: false };
+BaseButton.defaultProps = { disabled: false, onClick: undefined };
 
 BaseButton.propTypes = {
   disabled: T.bool,

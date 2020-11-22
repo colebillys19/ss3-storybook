@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { primaryCarbon } from 'defaultStyleHelper';
+import { primaryCarbon } from '../../../utils/defaultStyleHelper';
 
 const BaseParagraph = styled.p`
   color: ${primaryCarbon};

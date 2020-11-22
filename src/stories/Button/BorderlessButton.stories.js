@@ -6,13 +6,10 @@ import { BorderlessButton } from '../../components/Buttons';
 export default {
   title: 'Components/Buttons/Borderless',
   component: BorderlessButton,
-  // argTypes: {},
+  argTypes: { onClick: { action: 'onClick' } },
 };
 
 const Template = (args) => <BorderlessButton {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {
-  label: 'yeet',
-  onClick: () => null,
-};
+Default.args = { label: 'button' };

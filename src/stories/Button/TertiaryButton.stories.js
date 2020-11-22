@@ -6,13 +6,10 @@ import { MediumTertiaryButton } from '../../components/Buttons';
 export default {
   title: 'Components/Buttons/Tertiary',
   component: MediumTertiaryButton,
-  // argTypes: {},
+  argTypes: { onClick: { action: 'onClick' } },
 };
 
 const Template = (args) => <MediumTertiaryButton {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {
-  label: 'yeet',
-  onClick: () => null,
-};
+Default.args = { label: 'button' };

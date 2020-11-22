@@ -6,14 +6,10 @@ import { LargePrimaryButton } from '../../components/Buttons';
 export default {
   title: 'Components/Buttons/Disabled',
   component: LargePrimaryButton,
-  // argTypes: {},
+  argTypes: { onClick: { action: 'onClick' } },
 };
 
 const Template = (args) => <LargePrimaryButton {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {
-  disabled: true,
-  label: 'yeet',
-  onClick: () => null,
-};
+Default.args = { disabled: true, label: 'button' };

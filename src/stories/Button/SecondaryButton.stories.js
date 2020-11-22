@@ -6,13 +6,10 @@ import { LargeSecondaryButton } from '../../components/Buttons';
 export default {
   title: 'Components/Buttons/Secondary',
   component: LargeSecondaryButton,
-  // argTypes: {},
+  argTypes: { onClick: { action: 'onClick' } },
 };
 
 const Template = (args) => <LargeSecondaryButton {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {
-  label: 'yeet',
-  onClick: () => null,
-};
+Default.args = { label: 'button' };
