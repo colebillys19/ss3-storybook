@@ -1,18 +1,14 @@
 // import React from 'react';
 
-// import BaseButton from '../../components/Buttons/baseButton';
+// import PaymentTextField from '../../components/Input/PaymentTextField';
 
 // /* eslint-disable import/no-anonymous-default-export */
 // export default {
-//   title: 'Components/Buttons/Base',
-//   component: BaseButton,
-//   // argTypes: {},
+//   title: 'Components/TextFields/Payment',
+//   component: PaymentTextField,
 // };
 
-// const Template = (args) => <BaseButton {...args} />;
+// const Template = (args) => <PaymentTextField {...args} />;
 
 // export const Default = Template.bind({});
-// Default.args = {
-//   label: 'button',
-//   onClick: () => null,
-// };
+// Default.args = { label: 'payment' };

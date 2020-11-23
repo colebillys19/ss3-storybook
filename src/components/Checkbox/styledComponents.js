@@ -6,7 +6,7 @@ import {
   grayBorder,
   primaryGray,
   primaryPurple,
-} from 'defaultStyleHelper';
+} from '../../utils/defaultStyleHelper';
 
 /**
  * PaymentInputCheckbox styles

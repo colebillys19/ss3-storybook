@@ -3,7 +3,7 @@ import T from 'prop-types';
 
 import ConditionalRender from '../_base-ui/ConditionalRender';
 import DisplayText from '../_base-ui/DisplayText';
-import { P2 } from '../_base_ui/Paragraph';
+import { P2 } from '../_base-ui/Paragraph';
 import PaymentCheckbox from '../Checkbox/PaymentInputCheckbox';
 import {
   CheckboxContainer,

@@ -6,14 +6,9 @@ import BaseTextField from '../../components/Input/BaseTextField';
 export default {
   title: 'Components/TextFields/Base',
   component: BaseTextField,
-  argTypes: {
-    label: { control: 'text' },
-    onChange: { action: 'onChange' },
-    value: { control: 'text' },
-  },
 };
 
 const Template = (args) => <BaseTextField {...args} />;
 
 export const Default = Template.bind({});
-Default.args = { label: 'base', value: '' };
+Default.args = { label: 'base' };

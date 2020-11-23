@@ -1,18 +1,14 @@
-// import React from 'react';
+import React from 'react';
 
-// import BaseButton from '../../components/Buttons/baseButton';
+import LoginRegisterTextField from '../../components/Input/LoginRegisterTextField';
 
-// /* eslint-disable import/no-anonymous-default-export */
-// export default {
-//   title: 'Components/Buttons/Base',
-//   component: BaseButton,
-//   // argTypes: {},
-// };
+/* eslint-disable import/no-anonymous-default-export */
+export default {
+  title: 'Components/TextFields/LoginRegister',
+  component: LoginRegisterTextField,
+};
 
-// const Template = (args) => <BaseButton {...args} />;
+const Template = (args) => <LoginRegisterTextField {...args} />;
 
-// export const Default = Template.bind({});
-// Default.args = {
-//   label: 'button',
-//   onClick: () => null,
-// };
+export const Default = Template.bind({});
+Default.args = { label: 'login/register' };
