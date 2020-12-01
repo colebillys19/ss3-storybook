@@ -28,9 +28,13 @@ const BaseButton = ({
 BaseButton.defaultProps = { disabled: false, onClick: undefined };
 
 BaseButton.propTypes = {
+  /** prop desc */
   disabled: T.bool,
+  /** prop desc */
   Icon: T.element,
+  /** prop desc */
   label: T.oneOfType([T.string, T.element]).isRequired,
+  /** prop desc */
   onClick: T.func.isRequired,
 };
 

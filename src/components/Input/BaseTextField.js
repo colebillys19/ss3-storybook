@@ -104,12 +104,19 @@ BaseTextField.defaultProps = {
 };
 
 BaseTextField.propTypes = {
+  /** prop desc */
   disabled: T.bool,
+  /** prop desc */
   error: T.string,
+  /** prop desc */
   label: T.string.isRequired,
+  /** prop desc */
   onChange: T.func.isRequired,
+  /** prop desc */
   outline: T.bool,
+  /** prop desc */
   placeholder: T.string,
+  /** prop desc */
   value: T.string.isRequired,
 };
 

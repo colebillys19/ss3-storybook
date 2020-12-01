@@ -4,11 +4,11 @@ import LoginRegisterTextField from '../../components/Input/LoginRegisterTextFiel
 
 /* eslint-disable import/no-anonymous-default-export */
 export default {
-  title: 'Components/TextFields/LoginRegister',
+  title: 'Components/Input/LoginRegister',
   component: LoginRegisterTextField,
 };
 
 const Template = (args) => <LoginRegisterTextField {...args} />;
 
 export const Default = Template.bind({});
-Default.args = { label: 'login/register' };
+Default.args = { label: 'login/register', value: '' };

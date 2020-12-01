@@ -30,10 +30,15 @@ const IconButton = ({
 };
 
 IconButton.propTypes = {
+  /** prop desc */
   disabled: T.bool,
+  /** prop desc */
   iconName: T.string.isRequired,
+  /** prop desc */
   iconState: T.string,
+  /** prop desc */
   label: T.string.isRequired,
+  /** prop desc */
   onClick: T.func.isRequired,
 };
 
