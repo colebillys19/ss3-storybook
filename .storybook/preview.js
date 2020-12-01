@@ -1,3 +1,4 @@
+import React from 'react';
 import { StylesProvider } from "@material-ui/styles";
 
 const withThemeProvider = (Story, context) => (
