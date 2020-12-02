@@ -74,11 +74,17 @@ const PaymentTextField = ({
 PaymentTextField.defaultProps = { startsDisabled: false };
 
 PaymentTextField.propTypes = {
+  /** prop desc */
   error: T.string,
+  /** prop desc */
   label: T.string.isRequired,
+  /** prop desc */
   onChange: T.func.isRequired,
+  /** prop desc */
   placeholder: T.string,
+  /** prop desc */
   startsDisabled: T.bool,
+  /** prop desc */
   value: T.string.isRequired,
 };
 

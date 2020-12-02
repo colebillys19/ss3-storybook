@@ -1,14 +1,18 @@
-// import React from 'react';
+import React from 'react';
 
-// import PaymentTextField from '../../components/Input/PaymentTextField';
+//
+import aaa from '../../utils/svg/BaseUI-Icons/PaymentTextField/CheckMark-24x24.svg';
+import bbb from '../../utils/svg/BaseUI-Icons/PaymentTextField/Unchecked-24x24.svg';
 
-// /* eslint-disable import/no-anonymous-default-export */
-// export default {
-//   title: 'Components/TextFields/Payment',
-//   component: PaymentTextField,
-// };
+import PaymentTextField from '../../components/Input/PaymentTextField';
 
-// const Template = (args) => <PaymentTextField {...args} />;
+/* eslint-disable import/no-anonymous-default-export */
+export default {
+  title: 'Components/Input/Payment',
+  component: PaymentTextField,
+};
 
-// export const Default = Template.bind({});
-// Default.args = { label: 'payment' };
+const Template = (args) => <PaymentTextField {...args} />;
+
+export const Default = Template.bind({});
+Default.args = { label: 'payment', value: '' };
