@@ -4,11 +4,7 @@ import T from 'prop-types';
 import Filter from '../Filter';
 import { StyledButtonGroup } from './styledComponents';
 
-const FilterGroup = ({
-  filterList,
-  selectedFilter,
-  ...restProps
-}) => {
+const FilterGroup = ({ filterList, selectedFilter, ...restProps }) => {
   const [selected, setSelected] = useState(selectedFilter);
   const handleClick = ({ filterOnClickFunc, newSelected }) => {
     const selectedToDisplay = newSelected === selected ? '' : newSelected;
@@ -22,21 +18,17 @@ const FilterGroup = ({
       variant="text"
       {...restProps}
     >
-      {
-        filterList.map(({
-          label,
-          onClick,
-          ...restFilterProps
-        }) => (
-          <Filter
-            key={label}
-            label={label}
-            onClick={() => handleClick({ filterOnClickFunc: onClick, newSelected: label })}
-            selected={selected === label}
-            {...restFilterProps}
-          />
-        ))
-      }
+      {filterList.map(({ label, onClick, ...restFilterProps }) => (
+        <Filter
+          key={label}
+          label={label}
+          onClick={() =>
+            handleClick({ filterOnClickFunc: onClick, newSelected: label })
+          }
+          selected={selected === label}
+          {...restFilterProps}
+        />
+      ))}
     </StyledButtonGroup>
   );
 };

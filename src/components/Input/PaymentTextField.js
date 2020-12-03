@@ -45,16 +45,11 @@ const PaymentTextField = ({
   return (
     <PaymentContainer>
       <CheckboxContainer>
-        <PaymentCheckbox
-          isChecked={isChecked}
-          setIsChecked={setIsChecked}
-        />
+        <PaymentCheckbox isChecked={isChecked} setIsChecked={setIsChecked} />
       </CheckboxContainer>
       <PaymentInputContainer>
         <PaymentLabelContainer>
-          <PaymentLabel>
-            {label}
-          </PaymentLabel>
+          <PaymentLabel>{label}</PaymentLabel>
           <ConditionalRender
             Component={DisplayText}
             propsToPassDown={{ Component: PaymentErrorMessage, text: error }}

@@ -22,7 +22,7 @@ import { SmH5 } from '../_base-ui/Headings';
  */
 
 export const StyledInputGroup = styled.div`
-  background-color: ${dmiWhite}; 
+  background-color: ${dmiWhite};
   display: flex;
   width: 100%;
 `;
@@ -30,11 +30,11 @@ export const StyledInputGroup = styled.div`
 export const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: ${({ $outline }) => $outline ? '70%' : '100%'};
+  width: ${({ $outline }) => ($outline ? '70%' : '100%')};
 `;
 
 export const StyledBaseTextField = styled(TextField)`
-  margin: ${({ error }) => error ? '0 0 1rem' : '1rem 0'};
+  margin: ${({ error }) => (error ? '0 0 1rem' : '1rem 0')};
 
   .base-input {
     .input {
@@ -44,24 +44,24 @@ export const StyledBaseTextField = styled(TextField)`
       line-height: 1.6rem;
       padding: 0.8rem;
     }
-  
+
     .outline {
       border: ${primaryGrayBorder};
       border-radius: 0;
     }
-  
+
     &.error .outline {
-      border: ${({ value }) => value ? primaryGrayBorder : accentRedBorder};
+      border: ${({ value }) => (value ? primaryGrayBorder : accentRedBorder)};
       border-bottom: 0.3rem solid ${accentRed};
     }
-  
+
     &.focused .outline {
       border: ${primaryPurpleBorder};
-    };
-  
+    }
+
     &:hover:not(.disabled) .outline {
       border: ${primaryPurpleBorder};
-    };
+    }
 
     input::-ms-clear {
       display: none;
@@ -70,7 +70,7 @@ export const StyledBaseTextField = styled(TextField)`
 `;
 
 export const StyledUnderlineTextField = styled(TextField)`
-  margin: ${({ error }) => error ? '0 0 0.3rem' : '0.5rem 0 0.3rem'};
+  margin: ${({ error }) => (error ? '0 0 0.3rem' : '0.5rem 0 0.3rem')};
   padding: 0;
 
   .base-input {
@@ -90,11 +90,11 @@ export const StyledUnderlineTextField = styled(TextField)`
 
     &.focused .input {
       border-bottom: ${primaryPurpleBorder};
-    };
+    }
 
     &:hover:not(.disabled) .input {
       border-bottom: ${primaryPurpleBorder};
-    };
+    }
 
     input::-ms-clear {
       display: none;
@@ -121,7 +121,7 @@ export const ErrorMessage = styled.p`
   color: ${accentRed};
   font-size: 1rem;
   line-height: 1;
-  margin: ${({ $outline }) => $outline ? '-0.2rem 0 0' : '0.9rem 0 0'};
+  margin: ${({ $outline }) => ($outline ? '-0.2rem 0 0' : '0.9rem 0 0')};
   padding-bottom: 0.2rem;
 `;
 
@@ -136,7 +136,7 @@ export const StyledLabel = styled(P3)`
  */
 
 export const PaymentContainer = styled.div`
-  background-color: ${dmiWhite};  
+  background-color: ${dmiWhite};
   display: flex;
   width: 100%;
 `;

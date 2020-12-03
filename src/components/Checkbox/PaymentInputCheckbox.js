@@ -8,13 +8,16 @@ import {
   StyledPaymentInputCheckbox,
 } from './styledComponents';
 
-const checkIcon = iconDictionary('approved', { iconState: 'active', style: 'paymentInput' });
-const uncheckIcon = iconDictionary('unapproved', { iconState: 'default', style: 'paymentInput' });
+const checkIcon = iconDictionary('approved', {
+  iconState: 'active',
+  style: 'paymentInput',
+});
+const uncheckIcon = iconDictionary('unapproved', {
+  iconState: 'default',
+  style: 'paymentInput',
+});
 
-const PaymentInputCheckbox = ({
-  isChecked,
-  setIsChecked,
-}) => {
+const PaymentInputCheckbox = ({ isChecked, setIsChecked }) => {
   const handleClick = () => {
     setIsChecked((prevChecked) => !prevChecked);
   };

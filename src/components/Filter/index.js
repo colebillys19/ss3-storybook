@@ -3,12 +3,7 @@ import T from 'prop-types';
 
 import { FilterButton } from './styledComponents';
 
-const Filter = ({
-  label,
-  onClick,
-  selected,
-  ...restProps
-}) => (
+const Filter = ({ label, onClick, selected, ...restProps }) => (
   <FilterButton
     $selected={selected}
     label={label}

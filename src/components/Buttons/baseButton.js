@@ -2,13 +2,7 @@ import React from 'react';
 import T from 'prop-types';
 import Button from '@material-ui/core/Button';
 
-const BaseButton = ({
-  disabled,
-  Icon,
-  label,
-  onClick,
-  ...restProps
-}) => (
+const BaseButton = ({ disabled, Icon, label, onClick, ...restProps }) => (
   <Button
     classes={{
       endIcon: 'endIcon',

@@ -77,7 +77,8 @@ const baseTertiaryStyle = css`
     white-space: nowrap;
   }
 
-  .endIcon, .startIcon {
+  .endIcon,
+  .startIcon {
     height: 1.7rem;
     width: 1.7rem;
 

@@ -3,12 +3,7 @@ import T from 'prop-types';
 
 import { StyledSwitch } from './styledComponents';
 
-const Switch = ({
-  checked,
-  disabled,
-  onChange,
-  ...restProps
-}) => (
+const Switch = ({ checked, disabled, onChange, ...restProps }) => (
   <StyledSwitch
     checked={checked}
     classes={{

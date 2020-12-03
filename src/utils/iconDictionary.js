@@ -68,11 +68,7 @@ import {
 import { iconStyle } from './defaultStyleHelper';
 
 const iconDictionary = (name, { ...options }) => {
-  const {
-    iconState,
-    style,
-    ...propsToPassDown
-  } = options;
+  const { iconState, style, ...propsToPassDown } = options;
   const icons = {
     active: {
       account: HeaderAccountActiveIcon,

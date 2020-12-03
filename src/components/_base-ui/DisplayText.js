@@ -1,14 +1,8 @@
 import React from 'react';
 import T from 'prop-types';
 
-const DisplayText = ({
-  Component,
-  text,
-  ...restProps
-}) => (
-  <Component {...restProps}>
-    {text}
-  </Component>
+const DisplayText = ({ Component, text, ...restProps }) => (
+  <Component {...restProps}>{text}</Component>
 );
 
 DisplayText.propTypes = {

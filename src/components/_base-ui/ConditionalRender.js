@@ -8,8 +8,8 @@ function ConditionalRender({
   shouldRender,
 }) {
   if (shouldRender) {
-    const isStyledComponent = typeof Component === 'object' &&
-      !!Component.styledComponentId;
+    const isStyledComponent =
+      typeof Component === 'object' && !!Component.styledComponentId;
 
     if (typeof Component === 'function' || isStyledComponent) {
       return <Component {...propsToPassDown} />;
@@ -17,7 +17,8 @@ function ConditionalRender({
     return Component;
   }
   if (FallbackComponent) {
-    const isStyledComponent = typeof FallbackComponent === 'object' &&
+    const isStyledComponent =
+      typeof FallbackComponent === 'object' &&
       !!FallbackComponent.styledComponentId;
 
     if (typeof FallbackComponent === 'function' || isStyledComponent) {

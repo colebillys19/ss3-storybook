@@ -4,13 +4,7 @@ import T from 'prop-types';
 import ConditionalRender from '../ConditionalRender';
 import { IconWrapper, StyledExternalLink } from './styledComponents';
 
-const BaseExternalLink = ({
-  href,
-  Icon,
-  isRightIcon,
-  label,
-  ...restProps
-}) => (
+const BaseExternalLink = ({ href, Icon, isRightIcon, label, ...restProps }) => (
   <StyledExternalLink
     $isRightIcon={isRightIcon}
     href={href}

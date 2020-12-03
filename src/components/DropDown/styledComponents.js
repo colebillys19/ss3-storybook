@@ -62,7 +62,8 @@ export const StyledMenuItem = styled(MenuItem).attrs(({ selected }) => ({
     font-weight: 700;
   }
 
-  &.root.focusVisible, &.root:hover {
+  &.root.focusVisible,
+  &.root:hover {
     background-color: ${accentGray};
     color: white;
     font-weight: 700;

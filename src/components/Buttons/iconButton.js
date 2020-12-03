@@ -5,13 +5,7 @@ import iconDictionary from '../../utils/iconDictionary';
 
 import { StyledIconButton } from './styledComponents';
 
-const IconButton = ({
-  iconName,
-  iconState,
-  label,
-  onClick,
-  ...restProps
-}) => {
+const IconButton = ({ iconName, iconState, label, onClick, ...restProps }) => {
   const Icon = iconDictionary(iconName, { iconState });
 
   return (

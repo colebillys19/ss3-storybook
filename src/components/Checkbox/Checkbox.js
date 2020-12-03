@@ -3,12 +3,7 @@ import T from 'prop-types';
 
 import { StyledCheckbox } from './styledComponents';
 
-const Checkbox = ({
-  checked,
-  disabled,
-  onChange,
-  ...restProps
-}) => (
+const Checkbox = ({ checked, disabled, onChange, ...restProps }) => (
   <StyledCheckbox
     checked={checked}
     classes={{ checked: 'checked', root: 'root' }}

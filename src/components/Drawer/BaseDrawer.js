@@ -3,12 +3,7 @@ import T from 'prop-types';
 
 import { StyledDrawer } from './styledComponents';
 
-const BaseDrawer = ({
-  Component,
-  isOpen,
-  onClose,
-  ...restProps
-}) => (
+const BaseDrawer = ({ Component, isOpen, onClose, ...restProps }) => (
   <StyledDrawer
     anchor="right"
     classes={{

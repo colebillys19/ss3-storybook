@@ -11,7 +11,7 @@ export const H2 = styled.h2`
 `;
 
 export const H3 = styled.h3`
-  font-size: 2.0rem;
+  font-size: 2rem;
   line-height: 2.6rem;
 `;
 

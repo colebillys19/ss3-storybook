@@ -14,10 +14,7 @@ import {
   DropdownCalendarIcon,
   DropdownCheckmarkIcon,
 } from './BaseUI-Icons/Dropdown';
-import {
-  CheckmarkIcon,
-  UncheckedIcon,
-} from './BaseUI-Icons/PaymentTextField';
+import { CheckmarkIcon, UncheckedIcon } from './BaseUI-Icons/PaymentTextField';
 import {
   BackArrowCarbonMIcon,
   BackArrowCarbonSIcon,

@@ -18,17 +18,18 @@ const baseLinkStyle = css`
 
 export const StyledInternalLink = styled(Link)`
   ${baseLinkStyle};
-  flex-direction: ${({ $isRightIcon }) => $isRightIcon ? 'row-reverse' : ''};
+  flex-direction: ${({ $isRightIcon }) => ($isRightIcon ? 'row-reverse' : '')};
 `;
 
 export const StyledExternalLink = styled.a`
   ${baseLinkStyle};
-  flex-direction: ${({ $isRightIcon }) => $isRightIcon ? 'row-reverse' : ''};
+  flex-direction: ${({ $isRightIcon }) => ($isRightIcon ? 'row-reverse' : '')};
 `;
 
 export const IconWrapper = styled(({ Icon, ...restProps }) => (
   <div {...restProps}>{Icon}</div>
 ))`
   display: inherit;
-  padding: ${({ $isRightIcon }) => $isRightIcon ? '0 0 0 0.375rem' : '0 0.375rem 0 0'};
+  padding: ${({ $isRightIcon }) =>
+    $isRightIcon ? '0 0 0 0.375rem' : '0 0.375rem 0 0'};
 `;
