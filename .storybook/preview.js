@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import { StylesProvider } from "@material-ui/styles";
-import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`html { font-size: 62.5%; }`;
+import GlobalStyle from './globalStyle';
+
 const withGlobalStyle = (Story, context) => (
   <Fragment>
     <Story {...context} />

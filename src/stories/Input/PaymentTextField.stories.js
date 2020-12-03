@@ -8,7 +8,8 @@ export default {
   component: PaymentTextField,
 };
 
-const Template = (args) => <PaymentTextField {...args} />;
+// const Template = (args) => <PaymentTextField {...args} />;
+const Template = (args) => <div {...args}>PLACEHOLDER</div>;
 
 export const Default = Template.bind({});
 Default.args = { label: 'payment', value: '' };
