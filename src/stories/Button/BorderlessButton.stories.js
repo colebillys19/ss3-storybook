@@ -1,15 +1,15 @@
 import React from 'react';
 
-import { LargeSecondaryButton } from '../../components/Buttons';
+import { BorderlessButton } from '../../components/Buttons';
 
 /* eslint-disable import/no-anonymous-default-export */
 export default {
-  title: 'Components/Buttons/Secondary',
-  component: LargeSecondaryButton,
+  title: 'Components/Button/Borderless',
+  component: BorderlessButton,
   argTypes: { onClick: { action: 'onClick' } },
 };
 
-const Template = (args) => <LargeSecondaryButton {...args} />;
+const Template = (args) => <BorderlessButton {...args} />;
 
 export const Default = Template.bind({});
 Default.args = { label: 'button' };

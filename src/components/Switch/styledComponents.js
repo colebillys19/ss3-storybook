@@ -6,41 +6,47 @@ import {
   grayBorder,
   primaryGray,
   primaryPurple,
-} from 'defaultStyleHelper';
+} from '../../utils/defaultStyleHelper';
 
 export const StyledSwitch = styled(Switch)`
   .root {
     padding: 0;
-  },
+  }
+
   .switchBase {
     color: ${dmiWhite};
-    left: -.1rem;
+    left: -0.1rem;
     padding: 0;
     position: relative;
     top: 0;
+
     &.checked {
       transform: translateX(1.24rem);
-    };
+    }
+
     &.checked + .track {
       background-color: ${primaryPurple};
       height: 2.1rem;
-      left: -.05rem;
+      left: -0.05rem;
       opacity: 1;
       position: absolute;
-      top: -.15rem;
-    };
+      top: -0.15rem;
+    }
+
     &.Mui-focusVisible .thumb {
-      border: .4rem solid ${dmiWhite};
+      border: 0.4rem solid ${dmiWhite};
       color: ${primaryGray};
-    },
-  },
+    }
+  }
+
   .thumb {
     border: ${grayBorder};
     border-radius: 10rem;
     box-shadow: none;
     height: 2.1rem;
     width: 2.05rem;
-  },
+  }
+
   .track {
     background-color: ${primaryGray};
     border-radius: 10rem;

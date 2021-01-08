@@ -4,7 +4,7 @@ import PaymentTextField from '../../components/Input/PaymentTextField';
 
 /* eslint-disable import/no-anonymous-default-export */
 export default {
-  title: 'Components/Input/Payment',
+  title: 'Components/Text Input/Payment',
   component: PaymentTextField,
 };
 

@@ -4,7 +4,7 @@ import LoginRegisterTextField from '../../components/Input/LoginRegisterTextFiel
 
 /* eslint-disable import/no-anonymous-default-export */
 export default {
-  title: 'Components/Input/LoginRegister',
+  title: 'Components/Text Input/LoginRegister',
   component: LoginRegisterTextField,
 };
 

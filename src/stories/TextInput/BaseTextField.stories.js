@@ -4,7 +4,7 @@ import BaseTextField from '../../components/Input/BaseTextField';
 
 /* eslint-disable import/no-anonymous-default-export */
 export default {
-  title: 'Components/Input/Base',
+  title: 'Components/Text Input/Base',
   component: BaseTextField,
 };
 

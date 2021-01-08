@@ -8,6 +8,7 @@ export const StyledModalDialog = styled(Dialog)`
     overflow-x: hidden;
     overflow-y: auto;
   }
+
   .paper {
     border-radius: 0.8rem;
     border: ${grayBorder};
@@ -18,6 +19,7 @@ export const StyledModalDialog = styled(Dialog)`
     width: ${({ $width }) => $width || '38.8rem'};
     word-wrap: break-word;
   }
+
   .scrollPaper {
     align-items: ${({ $align }) => $align || 'center'};
     justify-content: ${({ $justify }) => $justify || 'center'};

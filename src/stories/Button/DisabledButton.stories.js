@@ -4,7 +4,7 @@ import { LargePrimaryButton } from '../../components/Buttons';
 
 /* eslint-disable import/no-anonymous-default-export */
 export default {
-  title: 'Components/Buttons/Primary',
+  title: 'Components/Button/Disabled',
   component: LargePrimaryButton,
   argTypes: { onClick: { action: 'onClick' } },
 };
@@ -12,4 +12,4 @@ export default {
 const Template = (args) => <LargePrimaryButton {...args} />;
 
 export const Default = Template.bind({});
-Default.args = { label: 'button' };
+Default.args = { disabled: true, label: 'button' };

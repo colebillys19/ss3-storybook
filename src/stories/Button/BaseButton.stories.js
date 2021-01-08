@@ -4,7 +4,7 @@ import BaseButton from '../../components/Buttons/baseButton';
 
 /* eslint-disable import/no-anonymous-default-export */
 export default {
-  title: 'Components/Buttons/Base',
+  title: 'Components/Button/Base',
   component: BaseButton,
   argTypes: { onClick: { action: 'onClick' } },
 };
